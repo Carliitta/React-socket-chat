@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://chatear.netlify.app/", // URL de  cliente React
+    origin: "https://chatear.netlify.app", // URL de  cliente React
     methods: ["GET", "POST"],
   },
 });
