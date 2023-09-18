@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+  height: 100vh; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+h1{
+  color:#4cda21;
+  background-color: #282c34;
+}
+
+/* Estilo para el texto de mensaje en modo claro */
+.texto-mensaje-claro {
+  color: #000000; /* Cambia el color del texto en modo claro */
+}
+
+/* Estilo para el texto de mensaje en modo oscuro */
+.texto-mensaje-oscuro {
+  color: #ffffff; /* Cambia el color del texto en modo oscuro */
+}
+
+/* Estilos para los mensajes de otros usuarios en modo claro */
+.mensaje-otros-claro {
+  background-color: #8ad8ee;
+  padding: 2px;
+  border-radius: 5px;
+  color: rgb(1, 7, 0);
+  text-align: right;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.toggle-modo{
+  font-size: 25px;
+ margin-bottom: 5px;
+}
+/* Estilos para los mensajes de otros usuarios en modo oscuro */
+.mensaje-otros-oscuro {
+  background-color: #119739;
+  padding: 2px;
+  border-radius: 5px;
+  color: rgb(8, 1, 19);
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+/* Estilos para los mensajes del cliente en modo claro */
+.mensaje-cliente-claro {
+  background-color: #79ca60;
+  padding: 2px;
+  border-radius: 5px;
+  color: rgb(8, 1, 19);
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+/* Estilos para los mensajes del cliente en modo oscuro */
+.mensaje-cliente-oscuro {
+  background-color: #106e88;
+  padding: 2px;
+  border-radius: 5px;
+  color: rgb(1, 7, 0);
+  text-align: right;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+/* Estilos para el Modo Claro */
+.chat-container {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 10px;
+
+}
+.list-unstyled{
+  overflow-y: auto;
+  max-height: 400px;
+}
+/* Estilos para el Modo Oscuro */
+.chat-container.modo-oscuro {
+  background: none;
+  padding: 10px;
+  color: #ffffff;
+ 
+}
+/* Estilos para el Modo Oscuro */
+.modo-oscuro {
+  background-color: #05383b; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+  
+}
+
+.modo-oscuro .form-control {
+  background-color: #041835; /* Fondo de input oscuro */
+  color: #fff; /* Texto de input claro */
+}
+.modo-oscuro .form-control::placeholder {
+  color: #e9e6e6; 
+}
+.modo-oscuro .formulario{
+  background-color: rgba(25, 103, 134, 0.692);
+}
+
+.card-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px; 
+  text-align: center; 
+  background-color: #282c34;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .mx-auto{
+    width: 350px !important;
+  }
+  .form {
+    width: 320px !important;
+  }
+ 
+  body {
+    font-size: 16px; 
+  }
+}
