@@ -7,13 +7,13 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000", // URL de  cliente React
+    origin: "*", // URL de  cliente React
     methods: ["GET", "POST"],
   },
 });
 app.use(cors());
 //<---------------------------------------------->
-app.use(express.static(path.join(__dirname, '../cliente/build')));
+/* app.use(express.static(path.join(__dirname, '../cliente/build'))); */
 //console.log(__dirname);
 //-------------------------------------------//
 let names=[]
