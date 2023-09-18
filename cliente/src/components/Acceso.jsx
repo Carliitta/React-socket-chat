@@ -3,8 +3,8 @@ import { RiLoginBoxLine } from "react-icons/ri";
 import io from "socket.io-client";
 import swal from "sweetalert2";
 
-const socket = io("http://localhost:3001");
-
+//const socket = io("http://localhost:3001");
+const socket = io("https://chat-ln21.onrender.com"); 
 const Acceso = ({ modoOscuro, mostrarChat }) => {
   const [nombre, setNombre] = useState("");
   const [habilitado, setHabilitado] = useState(false);

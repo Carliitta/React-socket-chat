@@ -5,7 +5,8 @@ import {BsFillChatLeftDotsFill} from "react-icons/bs"
 import swal from "sweetalert2";
 import '../App.css'; 
 
-const socket = io("http://localhost:3001");
+/* const socket = io("http://localhost:3001"); */
+const socket = io("https://chat-ln21.onrender.com"); 
 
 const Chat = ({ nombre, modoOscuro, toggleModoOscuro }) => {
   const [mensaje, setMensaje] = useState("");

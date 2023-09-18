@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "*", // URL de  cliente React
+    origin: "https://650879375d971a1321e265df--stellular-lamington-5e73da.netlify.app", // URL de  cliente React
     methods: ["GET", "POST"],
   },
 });
