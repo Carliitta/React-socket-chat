@@ -82,7 +82,10 @@ h1{
 .list-unstyled{
   overflow-y: auto;
   max-height: 400px;
+ 
+  
 }
+
 /* Estilos para el Modo Oscuro */
 .chat-container.modo-oscuro {
   background: none;
@@ -104,7 +107,10 @@ h1{
 .modo-oscuro .form-control::placeholder {
   color: #e9e6e6; 
 }
-.modo-oscuro .formulario{
+.modo-oscuro .formulario {
+  background-color: rgba(25, 103, 134, 0.692);
+}
+.modo-oscuro .lista-user{
   background-color: rgba(25, 103, 134, 0.692);
 }
 
@@ -118,15 +124,40 @@ h1{
   background-color: #282c34;
   color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .mx-auto{
     width: 350px !important;
+   
   }
   .form {
-    width: 320px !important;
+    width: 300px !important;
+   
   }
- 
+ .usuarios{
+  margin-top: 10px;
+ }
   body {
     font-size: 16px; 
   }
+  .list-unstyled{
+
+    max-height: 300px;
+  }
+  .contenedor-lista{
+    max-height: 150px !important;
+  }
+
+}
+.contenedor-lista{
+  max-height: 400px;
+  overflow-y: auto;
+}
+.lista{
+  list-style:none;
+  display: flex;
+
+}
+.btn{
+  margin-left: 10px;
+  height: 30px;
 }
